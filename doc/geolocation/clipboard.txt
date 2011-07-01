@@ -1,0 +1,11 @@
+nicolas morales 38, madrid
+lat: 40.390754
+lng: -3.732509
+
+nicolas morales 40, madrid
+lat: 40.390757
+lng: -3.732715
+
+plaza de españa, madrid
+lat: 40.423549
+lng: -3.713337

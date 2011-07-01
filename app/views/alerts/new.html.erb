@@ -1,0 +1,17 @@
+<div id="barra_instrucciones">
+	Aquí puedes dar de alta tu nueva alerta. 
+	Simplemente indica la dirección, los metros de distancia 
+	a los que quieres que el sistema te avise y 
+	la nota que quieres que se te envíe.
+</div> <!-- barra_mensaje -->
+
+<div id="col_izq">
+	<% form_for :alert, @alert, :url => { :action => 'create' } do |f| %>
+		<%= render :partial => 'form', :locals => {:f => f} %>
+		
+		<div class="elemento_form submit">
+			<%= f.submit "crear alerta" %>
+		</div>
+		
+	<% end %> <!-- form -->	
+</div> <!-- col_izq -->

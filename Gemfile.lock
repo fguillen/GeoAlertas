@@ -1,0 +1,44 @@
+GEM
+  remote: http://rubygems.org/
+  specs:
+    actionmailer (2.0.2)
+      actionpack (= 2.0.2)
+    actionpack (2.0.2)
+      activesupport (= 2.0.2)
+    activerecord (2.0.2)
+      activesupport (= 2.0.2)
+    activeresource (2.0.2)
+      activesupport (= 2.0.2)
+    activesupport (2.0.2)
+    google-geocode (1.2.1)
+      hoe (>= 1.1.4)
+      rc-rest (>= 2.0.0)
+    hoe (2.10.0)
+      rake (~> 0.8)
+    hpricot (0.8.4)
+    mocha (0.9.12)
+    net-http-persistent (1.8)
+    nokogiri (1.5.0)
+    rails (2.0.2)
+      actionmailer (= 2.0.2)
+      actionpack (= 2.0.2)
+      activerecord (= 2.0.2)
+      activeresource (= 2.0.2)
+      activesupport (= 2.0.2)
+      rake (>= 0.7.2)
+    rake (0.8.7)
+    rc-rest (4.0)
+      net-http-persistent (~> 1.0)
+      nokogiri (>= 1.3.1)
+    sqlite3 (1.3.3)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  google-geocode
+  hpricot
+  mocha
+  rails (= 2.0.2)
+  rake (= 0.8.7)
+  sqlite3

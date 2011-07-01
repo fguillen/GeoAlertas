@@ -1,0 +1,118 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta name="author" content="fernandoguillen.info">
+		<meta name="keywords" content="geo alertas, alertas, geolocalizacion, open movil forum">
+		<meta name="description" content="Sistema de alertas geolocalizadas">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+		<meta http-equiv="content-style-type" content="text/css">
+		<link rel="shortcut icon" href="images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.5.1/build/reset/reset-min.css">
+		<link href="css/html.css" rel="stylesheet" type="text/css">
+		<link href="css/style.css" rel="stylesheet" type="text/css">
+		<title>geoAlertas: Alertas Nueva</title>
+	</head>
+	<body>
+		<div id="bordes">
+			<div id="contenedor">
+				<div id="cabecera">
+					<h1>geoAlertas</h1>
+					<p>Tus alertas según tu posición</p>
+				</div> <!-- cabecera -->
+				
+				<div id="barra_usuario">
+					usuario <strong>fguillen.mail@gmail.com</strong>
+					<a href="login.html">salir</a>
+				</div> <!-- barra_usuario -->
+				
+				<div id="barra_migas_pan">
+					nueva alerta
+				</div> <!-- barra_usuario -->
+				
+				<div id="barra_mensajes">
+					Esto es un mensaje
+				</div> <!-- barra_mensaje -->
+				
+				<div id="contenido" class="nueva_alerta">
+				
+					<div id="barra_instrucciones">
+						Aquí puedes dar de alta tu nueva alerta. 
+						Simplemente indica la dirección, los metros de distancia 
+						a los que quieres que el sistema te avise y 
+						la nota que quieres que se te envíe.
+					</div> <!-- barra_mensaje -->
+
+					<div id="col_izq">
+						<form action="alertas_listar.html">
+							
+							<div class="elemento_form">
+								<label>dirección</label> <br />
+			          <input type="text" value="Nicolas Morales 38, Madrid"/>
+							</div>
+		
+							<div class="elemento_form">
+								<label>radio</label> <br />
+			          <input type="text" class="input_radio"/> <label>metros</label>
+							</div>
+							
+							<div class="elemento_form">
+								<label>nota</label> <br />
+			          <textarea>Estás cerca de la panadería, acuérdate de comprar una hogaza</textarea>
+							</div>
+		
+							<div class="elemento_form">
+								<label>interruptor</label> <br />
+								<div id="interruptor">
+				          <ul>
+				          	<li><input type="radio" /> <label>activada</label> </li>
+				          	<li><input type="radio" /> <label>desactivada</label> </li>
+				          </ul>
+								</div>
+							</div>
+							
+							<div class="elemento_form">
+								<label>enviada</label> <br />
+								<div id="lista_envios">
+				          <ul>
+				          	<li>29 de Noviembre a las 21:30</li>
+				          	<li>29 de Noviembre a las 22:30</li>
+				          	<li>29 de Noviembre a las 23:30</li>
+				          </ul>
+								</div>
+							</div>					
+							
+							<div class="elemento_form submit">
+								<input type="submit" value="enviar"/>
+							</div>
+							
+						</form>	
+					</div> <!-- col_izq -->
+					
+				</div> <!-- contenido -->
+				
+				<div id="pie">
+					<ul>
+						<li><a href="http://open.movilforum.com/wiki/index.php/GeoAlertas" title="wiki geoAlertas">wiki</a></li>
+						<li><a href="http://geoalertas.blogspot.com" title="blog geoAlertas">blog</a></li>
+						<li><a href="http://fernandoguillen.info" title="fernando guillen">autor</a></li>
+						<li><a href="#">código</a></li>
+					</ul>
+				</div> <!-- pie -->
+			</div> <!-- contenedor -->
+			
+		</div> <!-- bordes -->
+		
+		<!-- google analytics -->
+		<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+		var pageTracker = _gat._getTracker("UA-4267505-1");
+		pageTracker._initData();
+		pageTracker._trackPageview();
+		</script>
+
+	</body>
+</html>

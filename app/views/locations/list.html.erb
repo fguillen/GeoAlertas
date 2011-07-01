@@ -1,0 +1,50 @@
+<div id="barra_instrucciones">
+	Aquí puedes ver todas las localizaciones de tu móvil
+	que el sistema tiene registradas.
+</div> <!-- barra_mensaje -->
+
+<div id="col_izq">
+		<div id="bloque_localizaciones">
+		
+			<h3><%= @locations.size %> localizaciones</h3>
+		
+			<div id="localizaciones_mapa">
+			</div>
+
+			
+			
+			<!-- google maps chargin -->
+				<script>
+		      if( GBrowserIsCompatible() ) {
+		        var map = new GMap2(document.getElementById("localizaciones_mapa"));
+						
+						var center = new GLatLng( 40.390754, -3.732509 );
+						
+						<% if not @locations.first.nil? %>
+							center = new GLatLng( <%= @locations.first.latitude %>, <%= @locations.first.longitude %> );
+						<% end %>
+						
+		        map.setCenter(
+							center, 
+							13
+						);
+						
+						map.addControl(new GSmallMapControl());
+	        
+						<% @locations.each do |location| %>
+						  var point = 
+								new GLatLng(
+									<%= location.latitude %>,
+									<%= location.longitude %>
+								);
+									
+			        map.addOverlay(new GMarker(point));
+						<% end %>
+		      } else {
+						alert( "hay algún problema con google maps, igual tu navegador no es compatible o la KEY de google maps indicada no es la correcta.");
+					}
+				</script>
+		</div> <!-- bloque_localizaciones -->
+		
+
+</div> <!-- col_izq -->

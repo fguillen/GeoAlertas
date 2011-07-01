@@ -1,0 +1,106 @@
+8
+
+dir
+26
+https://geoalertas.googlecode.com/svn/trunk/geoalertas/lib
+https://geoalertas.googlecode.com/svn
+
+
+
+2008-05-12T20:01:59.351870Z
+22
+fguillen.mail
+
+
+svn:special svn:externals svn:needs-lock
+
+
+
+
+
+
+
+
+
+
+
+d9c145b6-f14b-0410-bc00-457a36f8ab56
+
+alerts_cron.rb
+file
+
+
+
+
+2008-05-12T17:02:40.000000Z
+f5d3a8d6fd2add89ac4fa67e7eceb0f1
+2008-05-12T18:09:40.726297Z
+20
+fguillen.mail
+
+geo_alerts_util.rb
+file
+
+
+
+
+2008-05-12T16:53:45.000000Z
+597990154cfc9dca9e420a62053ca173
+2008-05-12T18:09:40.726297Z
+20
+fguillen.mail
+
+movistar_wrappers
+dir
+
+tasks
+dir
+
+test_geo_alerts_util.rb
+file
+
+
+
+
+2008-05-12T16:27:07.000000Z
+fe91295b172aad81e35b6aeb1e22d968
+2008-05-12T18:09:40.726297Z
+20
+fguillen.mail
+
+test_geo_alerts_util_send_alert.rb
+file
+
+
+
+
+2008-05-12T16:12:08.000000Z
+ff5cd549bd16680a74c6b63b2e9b4742
+2008-05-12T18:09:40.726297Z
+20
+fguillen.mail
+
+test_google_geocode.rb
+file
+
+
+
+
+2008-05-12T14:46:44.000000Z
+2e63fd2b481d3d3528c8b52b18ca0461
+2008-05-12T18:09:40.726297Z
+20
+fguillen.mail
+
+test_movistar_localizame.rb
+file
+
+
+
+
+2008-05-12T19:22:56.000000Z
+a42e339fac7cb3fecd2e3aead8436c1a
+2008-05-12T20:01:59.351870Z
+22
+fguillen.mail
+

@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 37
+/svn/!svn/ver/22/trunk/geoalertas/lib
+END
+alerts_cron.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/20/trunk/geoalertas/lib/alerts_cron.rb
+END
+test_google_geocode.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/20/trunk/geoalertas/lib/test_google_geocode.rb
+END
+geo_alerts_util.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/20/trunk/geoalertas/lib/geo_alerts_util.rb
+END
+test_geo_alerts_util.rb
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/20/trunk/geoalertas/lib/test_geo_alerts_util.rb
+END
+test_movistar_localizame.rb
+K 25
+svn:wc:ra_dav:version-url
+V 65
+/svn/!svn/ver/22/trunk/geoalertas/lib/test_movistar_localizame.rb
+END
+test_geo_alerts_util_send_alert.rb
+K 25
+svn:wc:ra_dav:version-url
+V 72
+/svn/!svn/ver/20/trunk/geoalertas/lib/test_geo_alerts_util_send_alert.rb
+END

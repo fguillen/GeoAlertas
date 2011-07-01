@@ -1,0 +1,261 @@
+/* ######################
+ *   bordes
+ * ###################### */
+
+#bordes{
+	background: url('../images/sombras_bordes.png') repeat-y top center;
+	width: 836px;
+	margin: 0px auto;
+}
+
+
+/* ######################
+ *   contenedor
+ * ###################### */
+
+#contenedor{
+	background-color: white;
+	width: 800px;
+	margin: 0px auto;
+}
+
+
+/* ######################
+ *   cabecera
+ * ###################### */
+
+#cabecera{
+	height: 136px;
+	background: url('../images/cabecera.jpeg') no-repeat top center;
+	width: 100%;
+}
+
+
+#cabecera h1,
+#cabecera p {
+	display: none;
+}
+
+/* ######################
+ *   barra_usuario
+ * ###################### */
+
+#barra_usuario{
+	background-color: #000000;
+	color: white;
+	text-align: right;
+	font-family: "Arial Black", sans-serif;
+	font-size: 10px; 
+	padding: 2px 10px;
+}
+
+#barra_usuario a{
+	margin-left: 20px;
+	text-decoration: none;
+	color: #ffffff;
+}
+
+
+#barra_usuario a:hover{
+	text-decoration: underline;
+}
+
+/* ######################
+ *   barra_migas_pan
+ * ###################### */
+
+#barra_migas_pan{
+	background-color: #000000;
+	color: white;
+	text-align: right;
+	font-family: "Arial Black", sans-serif;
+	font-size: 20px; 
+	border-top: 4px solid #ffffff;
+	padding: 5px 10px;
+}
+
+/* ######################
+ *   barra_mensajes
+ * ###################### */
+
+#barra_mensajes{
+	background-color: #d4aa00;
+	color: white;
+	text-align: center;
+	font-family: "Arial Black", sans-serif;
+	font-size: 14px; 
+	padding: 10px 200px 10px 100px;
+	margin: 8px 0px 0px 0px;
+}
+
+/* ######################
+ *   barra_instrucciones
+ * ###################### */
+
+#barra_instrucciones{
+	background-color: #ffffff;
+	color: #000000;
+	text-align: justify;
+	font-family: "Arial Black", sans-serif;
+	font-size: 12px; 
+	padding: 10px 200px 10px 100px;
+	margin: 8px 0px 0px 0px;
+	border-top: 3px solid #d4aa00;
+	border-bottom: 3px solid #d4aa00;	
+	line-height: 12px;
+}
+
+/* ######################
+ *   contenido
+ * ###################### */
+
+
+
+#contenido #col_izq{
+	padding: 10px 200px 10px 100px;
+	font-family: "Arial Black", sans-serif;
+	font-size: 20px;
+}
+
+
+/* #### alertas_nueva ###### */
+
+#contenido label{
+	font-size: 16px; 
+}
+
+#contenido .elemento_form{
+	margin: 10px 0px;
+}
+
+#contenido input, 
+#contenido textarea{
+	border: 0px;
+	background-color: #ffe680;
+	width: 500px;
+	font-size: 20px;
+	color: #808080; 
+	padding: 5px;
+	line-height: 18px;
+}
+
+#contenido .input_radio{
+	width: 150px;
+	text-align: right;
+}
+
+
+#contenido .submit{
+	text-align: right;
+}
+	
+#contenido .submit input{
+	background-color: #d4aa00;
+	padding: 5px 20px;
+	text-decoration: none;
+	color: black;
+	width: 100px;
+}
+
+
+#contenido div#interruptor,
+#contenido div#lista_envios{
+	background-color: #d4aa00;
+	padding: 10px;
+}
+
+#contenido div#interruptor li{
+	background-color: #4d4d4d;
+	font-size: 20px;
+	display: inline;
+	color: white;
+	margin: 0px 20px;
+	padding: 4px 40px;
+}
+
+#contenido div#lista_envios li{
+	font-size: 18px;
+	color: black;
+	margin: 0px 10px;
+}
+
+
+/* #### alertas_listar ###### */
+.bloque_alerta{
+	background-color: #ffe680;
+	padding: 10px;
+	margin-bottom: 20px;
+}
+
+.bloque_alerta h3{
+	font-size: 20px;
+	color: #808080;
+	display: inline;
+}
+
+.bloque_alerta .alerta_metros{
+	font-size: 16px;
+}
+
+.bloque_alerta .alerta_nota{
+	background-color: #d4aa00;
+	padding: 5px;
+	line-height: 100%;
+}
+
+.bloque_alerta .alerta_info{
+	margin-top: 10px;
+}
+
+.bloque_alerta .alerta_info p{
+	color: #808080;
+	font-size: 16px;
+	text-align: right;
+	line-height: 110%;
+}
+
+.bloque_alerta .alerta_info p strong{
+	color: black;
+}
+
+.bloque_alerta .alerta_controles {
+	text-align: right;
+	margin-top: 10px;
+}
+
+.bloque_alerta .alerta_controles a{
+	background-color: #d4aa00;
+	padding: 5px 20px;
+	text-decoration: none;
+	color: black;
+}
+
+.bloque_alerta .alerta_controles a:hover{
+	border-bottom: 3px solid black;
+}
+
+/* ######################
+ *   pie
+ * ###################### */
+
+#pie{
+	height: 100px;
+	padding-top: 10px;
+	background-color: black;
+}
+
+#pie li{
+	display: inline;
+	font-family: "Arial Black", sans;
+	font-size: 20px;
+	margin-left: 20px;
+}
+
+#pie a{
+	text-decoration: none;
+	color: white;
+}
+
+#pie a:hover{
+	border-bottom: 3px solid white;
+}

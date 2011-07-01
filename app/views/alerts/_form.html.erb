@@ -1,0 +1,39 @@
+<div class="elemento_form">
+	<label>dirección</label> <br />
+	<%= f.text_field :address %>
+</div>
+
+<div class="elemento_form">
+	<label>radio</label> <br />
+	<%= f.text_field :radius, :class => 'input_radio' %> <label>metros</label>
+</div>
+
+<div class="elemento_form">
+	<label>nota</label> <br />
+	<%= f.text_area :text %>
+</div>
+
+<div class="elemento_form">
+	<label>interruptor</label> <br />
+	<div id="interruptor">
+    <ul>
+			<li><%= f.radio_button :status, Alert::STATUS_ACTIVE %> <label>activada</label></li>
+			<li><%= f.radio_button :status, Alert::STATUS_NOT_ACTIVE %> <label>desactivada</label></li>
+    </ul>
+	</div>
+</div>
+
+<div class="elemento_form">
+	<label>enviada</label> <br />
+	<div id="lista_envios">
+		<% if @alert.deliveries.size > 0 %>
+	    <ul>
+	    	<% for delivery in @alert.deliveries %>
+		    	<li><%= delivery.date.to_s %></li>
+				<% end %>
+	    </ul>
+		<% else %>
+			No enviada ninguna vez todavía.
+		<% end %>
+	</div>
+</div>

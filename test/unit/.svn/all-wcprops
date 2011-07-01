@@ -1,0 +1,41 @@
+K 25
+svn:wc:ra_dav:version-url
+V 43
+/svn/!svn/ver/19/trunk/geoalertas/test/unit
+END
+alert_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/14/trunk/geoalertas/test/unit/alert_test.rb
+END
+pepe_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/14/trunk/geoalertas/test/unit/pepe_test.rb
+END
+users_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/14/trunk/geoalertas/test/unit/users_test.rb
+END
+alerts_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/14/trunk/geoalertas/test/unit/alerts_test.rb
+END
+deliveries_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/14/trunk/geoalertas/test/unit/deliveries_test.rb
+END
+position_test.rb
+K 25
+svn:wc:ra_dav:version-url
+V 60
+/svn/!svn/ver/19/trunk/geoalertas/test/unit/position_test.rb
+END

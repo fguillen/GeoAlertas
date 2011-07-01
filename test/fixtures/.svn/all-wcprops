@@ -1,0 +1,35 @@
+K 25
+svn:wc:ra_dav:version-url
+V 47
+/svn/!svn/ver/19/trunk/geoalertas/test/fixtures
+END
+alerts.yml
+K 25
+svn:wc:ra_dav:version-url
+V 58
+/svn/!svn/ver/14/trunk/geoalertas/test/fixtures/alerts.yml
+END
+pepes.yml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/14/trunk/geoalertas/test/fixtures/pepes.yml
+END
+users.yml
+K 25
+svn:wc:ra_dav:version-url
+V 57
+/svn/!svn/ver/14/trunk/geoalertas/test/fixtures/users.yml
+END
+deliveries.yml
+K 25
+svn:wc:ra_dav:version-url
+V 62
+/svn/!svn/ver/14/trunk/geoalertas/test/fixtures/deliveries.yml
+END
+positions.yml
+K 25
+svn:wc:ra_dav:version-url
+V 61
+/svn/!svn/ver/19/trunk/geoalertas/test/fixtures/positions.yml
+END

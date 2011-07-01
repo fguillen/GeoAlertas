@@ -1,0 +1,20 @@
+<div id="barra_instrucciones">
+	Aquí puedes darte de alta en la aplicación. 
+	Antes de poder acceder al servicio geoAlertas debes 
+	de estar dado de alta en los servicios movistar: 
+	<a href="http://www.localizame.movistar.es">localízame</a> y 
+	<a href="http://open.movilforum.com/ihttpes">SMS</a>.
+	Lee las <a href="http://geoalertas.googlecode.com/files/geoAlertas_documentacion_v01.pdf">instrucciones</a>
+	para más información.
+</div> <!-- barra_mensaje -->
+
+<div id="col_izq">
+	<% form_for :user, @user, :url => { :action => 'create' } do |f| %>
+		<%= render :partial => 'form', :locals => {:f => f} %>
+		
+		<div class="elemento_form submit">
+		  <%= f.submit 'crear cuenta' %>
+		</div>
+		
+	<% end %>	 <!-- form -->
+</div> <!-- col_izq -->

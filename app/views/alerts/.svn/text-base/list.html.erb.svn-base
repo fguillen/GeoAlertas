@@ -1,0 +1,68 @@
+<div id="barra_instrucciones">
+	Aquí puedes ver todas las alertas que has creado
+	ordenadas por la actualizada más recientemente.
+	Las alertas se mostrarán tanto si están activas como si no.
+</div> <!-- barra_mensaje -->
+
+<div id="col_izq">
+	
+	<% @alerts.each do |alert| %>
+		
+		<div class="bloque_alerta">
+		
+			<h3><%= alert.address %></h3>
+			<span class="alerta_metros">(<%= alert.radius %>m)</span>
+		
+			<div id="alerta_mapa_<%= alert.id %>" class="alerta_mapa">
+			</div>
+			
+			<!-- google maps chargin -->
+			<script>
+	      if( GBrowserIsCompatible() ) {
+	        var map = new GMap2(document.getElementById("alerta_mapa_<%= alert.id %>"));
+	        map.setCenter(
+						new GLatLng( <%= alert.latitude %>, <%= alert.longitude %> ), 
+						15
+					);
+        
+				  var point = 
+						new GLatLng(
+							<%= alert.latitude %>,
+							<%= alert.longitude %>
+						);
+							
+	        map.addOverlay(new GMarker(point));
+	      } else {
+					alert( "hay algún problema con google maps, igual tu navegador no es compatible o la KEY de google maps indicada no es la correcta.");
+				}
+			</script>
+		
+			<div class="alerta_nota">
+				<p class="alerta_nota"><%= alert.text %></p>	
+			</div>
+			
+			<div class="alerta_info">
+				<p>Ultima actualización el <%= alert.updated_at %></p>
+				
+				<% if not alert.deliveries.last.nil? %>
+					<p>Ultimo envío el <%= alert.deliveries.last.date %></p>
+				<% else %>
+					<p>Ningún envío todavía</p>
+				<% end %>
+				
+				<% if alert.status == Alert::STATUS_ACTIVE %>
+					<p>Esta alerta está <strong>activa</strong></p>
+				<% else %>
+					<p>Esta alerta está <strong>no activa</strong></p>
+				<% end %>
+			</div>
+			
+			<div class="alerta_controles">
+				<%= link_to 'editar', :action => 'edit', :id => alert.id %>
+			</div>
+			
+		</div>
+		
+	<% end %>
+
+</div> <!-- col_izq -->

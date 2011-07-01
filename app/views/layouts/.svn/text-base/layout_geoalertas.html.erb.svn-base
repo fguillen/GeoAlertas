@@ -1,0 +1,87 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+	<head>
+		<meta name="author" content="fernandoguillen.info">
+		<meta name="keywords" content="geo alertas, alertas, geolocalizacion, open movil forum">
+		<meta name="description" content="Sistema de alertas geolocalizadas">
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta http-equiv="content-type" content="application/xhtml+xml; charset=UTF-8">
+		<meta http-equiv="content-style-type" content="text/css">
+		<link rel="shortcut icon" href="/images/favicon.ico" />
+		<link rel="stylesheet" type="text/css" href="http://yui.yahooapis.com/2.5.1/build/reset/reset-min.css">
+		<link href="/stylesheets/html.css" rel="stylesheet" type="text/css">
+		<link href="/stylesheets/style.css" rel="stylesheet" type="text/css">
+    <script src="http://maps.google.com/maps?file=api&amp;v=2&amp;key=<%= ApplicationController::GOOGLE_GEO_API %>" type="text/javascript"></script>
+		<title>geoAlertas - Tus Alertas según tu Posición - <%= @migas_pan %></title>
+	</head>
+	<body>
+		<div id="bordes">
+			<div id="contenedor">
+				<div id="cabecera">
+					<h1>geoAlertas</h1>
+					<p>Tus alertas según tu posición</p>
+				</div> <!-- cabecera -->
+				
+				<div id="barra_usuario">
+					<% if !session[:user_id].nil? %>
+						<ul>
+							<li>usuario <strong><%= User.find(session[:user_id]).phone %></strong></li>
+							<li><%= link_to 'tus alertas', :controller => 'alerts', :action => 'list' %></li>
+							<li><%= link_to 'nueva alerta', :controller => 'alerts', :action => 'new' %></li>
+							<li><%= link_to 'localizaciones', :controller => 'locations', :action => 'list' %></li>
+							<li><%= link_to 'tu cuenta', :controller => 'users', :action => 'update' %></li>
+							<li><%= link_to 'salir', logout_url %></li>
+						</ul>
+					<% else %>
+						<ul>
+							<li><%= link_to 'login', login_url %></li>
+							<li><%= link_to 'registrarse', :controller => 'users', :action => 'new' %></li>
+						</ul>
+					<% end %>
+				</div> <!-- barra_usuario -->
+				
+				<div id="barra_migas_pan">
+					<%= @migas_pan %>
+				</div> <!-- barra_usuario -->
+				
+				<% if not flash[:error].nil?  %>
+					<div id="barra_mensajes">
+							<%= flash[:error] %>
+					</div>
+				<% end%>
+				
+				<% if not flash[:notice].nil?  %>
+					<div id="barra_mensajes">
+							<%= flash[:notice] %>
+					</div>
+				<% end %>
+				
+				<div id="contenido" class="nueva_alerta">
+					<%= yield%>
+				</div> <!-- contenido -->
+				
+				<div id="pie">
+					<ul>
+						<li><a href="http://open.movilforum.com/wiki/index.php/GeoAlertas" title="wiki geoAlertas">wiki</a></li>
+						<li><a href="http://geoalertas.blogspot.com" title="blog geoAlertas">blog</a></li>
+						<li><a href="http://fernandoguillen.info" title="fernando guillen">autor</a></li>
+						<li><a href="http://code.google.com/p/geoalertas/">código</a></li>
+					</ul>
+				</div> <!-- pie -->
+			</div> <!-- contenedor -->
+			
+		</div> <!-- bordes -->
+		
+		<!-- google analytics -->
+		<script type="text/javascript">
+		var gaJsHost = (("https:" == document.location.protocol) ? "https://ssl." : "http://www.");
+		document.write(unescape("%3Cscript src='" + gaJsHost + "google-analytics.com/ga.js' type='text/javascript'%3E%3C/script%3E"));
+		</script>
+		<script type="text/javascript">
+		var pageTracker = _gat._getTracker("UA-4267505-1");
+		pageTracker._initData();
+		pageTracker._trackPageview();
+		</script>
+
+	</body>
+</html>

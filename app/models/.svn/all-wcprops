@@ -1,0 +1,29 @@
+K 25
+svn:wc:ra_dav:version-url
+V 44
+/svn/!svn/ver/25/trunk/geoalertas/app/models
+END
+location.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/20/trunk/geoalertas/app/models/location.rb
+END
+alert.rb
+K 25
+svn:wc:ra_dav:version-url
+V 53
+/svn/!svn/ver/14/trunk/geoalertas/app/models/alert.rb
+END
+delivery.rb
+K 25
+svn:wc:ra_dav:version-url
+V 56
+/svn/!svn/ver/20/trunk/geoalertas/app/models/delivery.rb
+END
+user.rb
+K 25
+svn:wc:ra_dav:version-url
+V 52
+/svn/!svn/ver/20/trunk/geoalertas/app/models/user.rb
+END

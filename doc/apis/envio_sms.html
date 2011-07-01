@@ -1,0 +1,13 @@
+<html>
+  <title>Ejemplo opensms</title>
+  <body>
+    <form action='https://opensms.movistar.es/aplicacionpost/loginEnvio.jsp' method='POST'>
+      <input type='hidden' name='TM_ACTION' value='AUTHENTICATE'>
+      Mi Movil: <input type='text' name='TM_LOGIN'>
+      Password: <input type='password' name='TM_PASSWORD'size=20> (Envia 'miclave' al 770)
+      Destinos: <input type='text' name='to'size=40>
+      Texto: <input type='text' name='message' size=80>
+      <input type='submit' value='Enviar'>
+    </form>
+  </body>
+</html>
