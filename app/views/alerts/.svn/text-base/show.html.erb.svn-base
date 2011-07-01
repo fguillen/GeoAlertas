@@ -1,3 +1,0 @@
-
-<%= link_to 'Edit', edit_alerts_path(@alerts) %> |
-<%= link_to 'Back', alerts_path %>

@@ -1,55 +1,0 @@
-8
-
-dir
-26
-https://geoalertas.googlecode.com/svn/trunk/geoalertas/test
-https://geoalertas.googlecode.com/svn
-
-
-
-2008-05-11T21:37:41.164493Z
-19
-fguillen.mail
-
-
-svn:special svn:externals svn:needs-lock
-
-
-
-
-
-
-
-
-
-
-
-d9c145b6-f14b-0410-bc00-457a36f8ab56
-
-fixtures
-dir
-
-functional
-dir
-
-integration
-dir
-
-mocks
-dir
-
-test_helper.rb
-file
-
-
-
-
-2008-04-28T16:51:41.000000Z
-30478106e9df8977e79fc045df799e29
-2008-04-28T16:58:59.627936Z
-3
-fguillen.mail
-
-unit
-dir
-

@@ -1,4 +1,0 @@
-body {
-	background: url('../images/textura_fondo.jpeg') repeat left top;
-	background-attachment: fixed;
-}
