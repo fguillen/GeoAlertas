@@ -1,7 +1,7 @@
-= Geo Alertas
+# Geo Alertas
 
 Experimental project to connect alerts with geo position.
 
-== Disclaimer
+## Disclaimer
 
 This is a very old project, not interesting code in.
